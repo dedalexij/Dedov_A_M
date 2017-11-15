@@ -1,4 +1,3 @@
-#pragma once
 #ifndef COMPLEX_H
 #define COMPLEX_H
 
@@ -7,7 +6,7 @@
 
 struct Complex
 {
-	Complex() {};
+ Complex() = default;
 	explicit Complex(const double real);
 	Complex(const double real, const double imaginary);
 	bool operator== (const Complex& rhs) const { return (abs(re - rhs.re)<0.0001) && (abs(im - rhs.im)<0.0001); }

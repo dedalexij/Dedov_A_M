@@ -1,12 +1,13 @@
 #pragma once
 #ifndef ARRAY_H
 #define ARRAY_H
+
 #include <cstddef>
 
 class Array
 {
-
- Array (){}
+public:
+ Array() = default;
  Array(const int& length);
  Array(Array& newArray);
  ~Array();

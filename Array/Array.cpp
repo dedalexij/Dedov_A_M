@@ -1,4 +1,4 @@
-#include "Array.h"
+#include "array.h"
 
 Array::Array(const int& length)
 {
@@ -8,7 +8,7 @@ Array::Array(Array& arr)
 {
  if (size_ < arr.capacity_)
  {
-  throw "array overflow";
+  throw "подумой";
  }
  int i;
  for (i = 0; i < arr.capacity_; i++);
